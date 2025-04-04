@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- REMIXICON -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css">
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="icon" href="../assets/img/svg.png">
+    <title>PT. HAROSINDO TEKNOLOGI INDONESIA</title>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "NTcRQVNvOJ75D5XdZ",
+            });
+        })();
+    </script>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <nav>
+            <div class="nav__container">
+                
+                <div class="nav__logo">
+                    <a href="./">
+                        <img src="../assets/img/logo.png" alt="logo" class="footer__logo">
+                    </a>
+                </div>
+
+                <ul class="nav__links" id="nav-links">
+                    <li class="link"><a href="#home">Beranda</a></li>
+                    <li class="link"><a href="./about">Tentang Kami</a></li>
+                    <li class="link"><a href="./product">Produk</a></li>
+                    <li class="link"><a href="./facility">Fasilitas</a></li>
+                    <li class="link"><a href="#contact">Kontak</a></li>
+
+                    <!-- LANGUAGE -->
+                    <div class="language-dropdown">
+                        <button class="lang-btn" onclick="toggleLangMenu()">
+                            <img src="../assets/img/id.png" alt="Bahasa" width="20" height="20">
+                            <span>ID</span>
+                            <i class="ri-arrow-down-s-line"></i>
+                        </button>
+
+                        <ul class="lang-menu" id="langMenu">
+                            <li class="language">
+                                <a href="./" data-lang="id">
+                                    <img src="../assets/img/id.png" alt="Bahasa Indonesia">
+                                    <span>Indonesia</span>
+                                </a>
+                            </li>
+                            <li class="language">
+                                <a href="../en" data-lang="en">
+                                    <img src="../assets/img/en.png" alt="English">
+                                    <span>English</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </ul>
+
+                <div class="nav__menu__btn" id="menu-btn">
+                    <span><i class="ri-menu-line"></i></span>
+                </div>
+            </div>
+        </nav>
+
+        <div class="section__container header__container" id="home">
+            <h1>PT. HAROSINDO TEKNOLOGI <br> INDONESIA</h1>
+            <p>
+                Sebuah perusahaan terpercaya yang bergerak dibidang components metal stamping, terletak di cikarang, Kabupaten Bekasi, Jawa Barat
+                
+            </p>
+            <a href="#about"><i class="ri-arrow-down-double-line"></i></a>
+        </div>
+
+        <video src="../assets/video/vid.mp4" autoplay loop muted></video>
+    </header>
+
+    <!-- ABOUT -->
+    <section class="section__container about__container" id="about">
+        <img class="about__bg" src="../assets/img/dot-bg.png" alt="bg" />
+
+        <div class="about__content">
+            <h2 class="section__header">Tentang Kami</h2>
+            <p class="section__subheader">
+                PT Harosindo Teknologi Indonesia adalah sebuah perusahaan yang bergerak di bidang components metal stamping. Berdiri sejak tahun 2015,dengan jumlah karyawan lebih dari 150 orang. PT Harosindo Teknologi Indonesia telah memiliki sertifikat ISO 9001 tahun 2015 tentang manajemen mutu. Dengan pengalaman lebih dari 7 tahun, kami dipercaya untuk menyediakan kebutuhan Anda dalam bidang components metal stamping.
+            </p>
+            <div class="btn__about">
+                <a href="about.html" class="btn">Selengkapnya</a>
+            </div>
+        </div>
+
+
+        <div class="about__image">
+            <img src="../assets/img/about.jpg" alt="about" />
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section class="services__container" id="services">
+        <div class="services__grid__top">
+            <img src="../assets/img/s-7.jpg" alt="Ruang Rapat" />
+            <img src="../assets/img/s-2.jpg" alt="Ruang Konferensi" />
+            <img src="../assets/img/s-6.jpg" alt="Ruang Pelatihan" />
+
+            <div class="services__content">
+                <h2 class="section__header">Fasilitas Ruangan</h2>
+                <p class="section__subheader">Ruang Rapat, Ruang Konferensi, Ruang Pelatihan, Ruang Quality Control, Ruang Pengiriman, Ruang Gudang</p>
+            </div>
+        </div>
+
+        <div class="services__grid__bottom">
+            <img src="../assets/img/s-4.jpg" alt="Area Produksi" />
+            <img src="../assets/img/s-5.jpg" alt="Ruang Quality Control" />
+            <img src="../assets/img/s-1.jpg" alt="Gudang Penyimpanan" />
+            <img src="../assets/img/s-3.jpg" alt="Area Pengiriman" />
+        </div>
+    </section>
+
+    <!-- PRODUCT -->
+    <section class="section__container product__container" id="product">
+        <div class="product__content">
+            <h2 class="section__header">Produk</h2>
+            <p class="section__subheader">
+                PT Harosindo Teknologi Indonesia menyediakan berbagai produk yang berkualitas tinggi untuk kebutuhan Anda.
+            </p>
+        </div>
+
+        <div class="product__image">
+            <div class="product__image__content">
+                <img src="../assets/img/p1.png" alt="craft" />
+                <p>BRACKET 2 IGN COIL</p>
+            </div>
+            <a href="product.html"><i class="ri-arrow-right-up-fill"></i></a>
+        </div>
+
+        <div class="product__image">
+            <div class="product__image__content">
+                <img src="../assets/img/p2.png" alt="craft" />
+                <p>REINF SEAT BRACKET R/L</p>
+            </div>
+            <a href="product.html"><i class="ri-arrow-right-up-fill"></i></a>
+        </div>
+
+        <div class="product__image">
+            <div class="product__image__content">
+                <img src="../assets/img/p3.png" alt="craft" />
+                <p>BRACKET FOOTREST 2 RH/LH</p>
+            </div>
+            <a href="product.html"><i class="ri-arrow-right-up-fill"></i></a>
+        </div>
+
+        <div class="product__image">
+            <div class="product__image__content">
+                <img src="../assets/img/p4.png" alt="craft" />
+                <p>PIPE HANDLE BAR BK6 RH/LH</p>
+            </div>
+            <a href="product.html"><i class="ri-arrow-right-up-fill"></i></a>
+        </div>
+
+        <div class="product__btn">
+            <a href="product.html" class="btn">Selengkapnya</a>
+        </div>
+    </section>
+
+    <!-- FASILITAS -->
+    <section class="section__container facility__container" id="facility">
+        <div class="facility__image">
+            <img src="../assets/img/dot-bg.png" alt="bg" class="facility__bg" />
+            <img src="../assets/img/v1.png" alt="modern" class="facility__img-1" />
+            <img src="../assets/img/v2.png" alt="modern" class="facility__img-2" />
+            <img src="../assets/img/v3.png" alt="modern" class="facility__img-3" />
+        </div>
+
+        <div class="facility__content">
+            <h2 class="section__header">Fasilitas</h2>
+            <p class="section__subheader">
+                PT Harosindo Teknologi Indonesia memiliki fasilitas yang lengkap untuk menunjang kebutuhan produksi.
+            </p>
+
+            <div class="facility__grid">
+                <div class="facility__card">
+                    <span><i class="ri-checkbox-blank-circle-line"></i></span>
+                    <p>
+                        STAMPING MACHINE 100 TONS
+                    </p>
+                </div>
+
+                <div class="facility__card">
+                    <span><i class="ri-checkbox-blank-circle-line"></i></span>
+                    <p>
+                        EQUIPMENT PENUNJANG
+                    </p>
+                </div>
+            </div>
+            <a href="facility.html" class="btn">Selengkapnya</a>
+        </div>
+    </section>
+
+    <!--================ CONTACT ME =================-->
+    <section class="contact section" id="contact">
+        <h2 class="section__title">Kontak Kami</h2>
+        <span class="section__subtitle">Hubungi Kami</span>
+
+        <div class="contact__container container grid">
+          <div class="contact__content">
+            <h3 class="contact__title">Hubungi Kami</h3>
+
+            <div class="contact__info">
+              <div class="contact__card">
+                <i class="ri-mail-fill contact__card-icon"></i>
+
+                <h3 class="contact__card-title">Email</h3>
+                <span class="contact__card-data">harosindoteknologiindonesia@gmail.com</span>
+                <a href="mailto:harosindoteknologiindonesia@gmail.com" class="contact__button"
+                  >Kirim Pesan
+                  <i class="ri-arrow-right-up-fill contact__button-icon"></i>
+                </a>
+              </div>
+
+              <div class="contact__card">
+                <i class="ri-phone-fill contact__card-icon"></i>
+
+                <h3 class="contact__card-title">Phone</h3>
+                <span class="contact__card-data">+62 8xxxxxxxxxx</span>
+                <a
+                  href="https://wa.me/628xxxxxxxxxx"
+                  class="contact__button"
+                  target="_blank"
+                  >Hubungi Kami
+                  <i class="ri-arrow-right-up-fill contact__button-icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact__content">
+            <h3 class="contact__title">Kirim Pesan</h3>
+
+            <div id="contact-form" class="contact__form"">
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Nama</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  class="contact__form-input"
+                  placeholder="Masukkan Nama Anda"
+                  required
+                />
+              </div>
+
+              <div class="contact__form-div">
+                <label class="contact__form-tag">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  class="contact__form-input"
+                  placeholder="Masukkan Email Anda"
+                  required
+                />
+              </div>
+
+              <div class="contact__form-div contact__form-area">
+                <label class="contact__form-tag">Pesan</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  cols="30"
+                  rows="10"
+                  class="contact__form-input"
+                  placeholder="Masukkan Pesan Anda"
+                  required
+                ></textarea>
+              </div>
+
+              <button class="button button--flex" onclick="sendEmail()">
+                Kirim Pesan
+                <svg
+                  class="button__icon"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <path
+                    d="M14.2199 21.9352C13.0399 21.9352 11.3699 21.1052 10.0499 17.1352L9.32988 14.9752L7.16988 14.2552C3.20988 12.9352 2.37988 11.2652 2.37988 10.0852C2.37988 8.91525 3.20988 7.23525 7.16988 5.90525L15.6599 3.07525C17.7799 2.36525 19.5499 2.57525 20.6399 3.65525C21.7299 4.73525 21.9399 6.51525 21.2299 8.63525L18.3999 17.1252C17.0699 21.1052 15.3999 21.9352 14.2199 21.9352ZM7.63988 7.33525C4.85988 8.26525 3.86988 9.36525 3.86988 10.0852C3.86988 10.8052 4.85988 11.9052 7.63988 12.8252L10.1599 13.6652C10.3799 13.7352 10.5599 13.9152 10.6299 14.1352L11.4699 16.6552C12.3899 19.4352 13.4999 20.4252 14.2199 20.4252C14.9399 20.4252 16.0399 19.4352 16.9699 16.6552L19.7999 8.16525C20.3099 6.62525 20.2199 5.36525 19.5699 4.71525C18.9199 4.06525 17.6599 3.98525 16.1299 4.49525L7.63988 7.33525Z"
+                    fill="#fff"
+                  ></path>
+                  <path
+                    d="M10.11 14.7052C9.92005 14.7052 9.73005 14.6352 9.58005 14.4852C9.29005 14.1952 9.29005 13.7152 9.58005 13.4252L13.16 9.83518C13.45 9.54518 13.93 9.54518 14.22 9.83518C14.51 10.1252 14.51 10.6052 14.22 10.8952L10.64 14.4852C10.5 14.6352 10.3 14.7052 10.11 14.7052Z"
+                    fill="#fff"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- PARTNER -->
+    <section class="section__container partner__container" id="partner">
+        <div class="partner__slider">
+            <div class="overflow">
+                <div class="partner__wrapper">
+                    <div class="partner__item">
+                        <img src="../assets/img/f1.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f2.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f3.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f4.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f5.png" alt="partner" />
+                    </div>
+                </div>
+
+                <div class="partner__wrapper">
+                    <div class="partner__item">
+                        <img src="../assets/img/f1.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f2.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f3.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f4.png" alt="partner" />
+                    </div>
+
+                    <div class="partner__item">
+                        <img src="../assets/img/f5.png" alt="partner" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__row">
+                <div class="footer__col">
+                    <img src="../assets/img/logo.png" alt="logo" class="footer__logo">
+                    <p>Sebuah perusahaan terpercaya yang bergerak dibidang components metal stamping, terletak di cikarang, Kabupaten Bekasi, Jawa Barat</p>
+                    <div class="social__links">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-instagram-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#"><i class="ri-linkedin-fill"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="#home">Beranda</a></li>
+                        <li><a href="./about">Tentang Kami</a></li>
+                        <li><a href="./product">Produk</a></li>
+                        <li><a href="./facility">Fasilitas</a></li>
+                        <li><a href="#contact">Kontak</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Rencana Masa Depan</h4>
+                    <ul>
+                        <li><a href="#">Pengembangan Produk Baru</a></li>
+                        <li><a href="#">Mockup Aplikasi</a></li>
+                        <li><a href="#">Rencana bisnis pemasaran untuk produk baru</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__col">
+                    <h4>Kontak</h4>
+                    <ul class="contact__info">
+                        <li>
+                            <span><i class="ri-phone-fill"></i></span>
+                            <p>08XXXXXXXXXXX</p>
+                        </li>
+                        <li>
+                            <span><i class="ri-mail-fill"></i></span>
+                            <p>harosindoteknologiindonesia@gmail.com</p>
+                        </li>
+                        <li>
+                            <span><i class="ri-globe-fill"></i></span>
+                            <p>www.harosindoteknologiindonesia.com</p>
+                        </li>
+                        <li>
+                            <span><i class="ri-map-pin-fill"></i></span>
+                            <p><a href="https://www.google.com/maps/place/PT+HAROSINDO+TEKNOLOGI+INDONESIA/@-6.3229686,107.18281,17z/" target="_blank">PT Harosindo Teknologi Indonesia Cikarang</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <p>&copy; 2025 PT Harosindo Teknologi Indonesia. Hak Cipta Dilindungi.</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <script src="../assets/js/msg.js"></script>
+</body>
+</html>
